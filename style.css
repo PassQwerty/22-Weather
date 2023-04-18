@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Rubik:300,regular,500,700);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+
+header {
+  width: 100vw;
+  height: 227px;
+  background: linear-gradient(137deg, #5457f9, #ff6681);
+  border-bottom: 3px solid #00000070;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#textHeader {
+  color: white;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+#Form {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  height: 47px;
+  width: 388px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+#inputForm {
+  background: white;
+  border: 0px;
+  padding-left: 15px;
+  font-size: 20px;
+  flex-grow: 1;
+  outline: none;
+  font-weight: 300;
+  font-family: "Rubik", sans-serif;
+}
+
+#buttonForm {
+  padding: 0px 25px;
+  margin: 3px;
+  font-weight: 500;
+  font-family: "Rubik", sans-serif;
+  font-size: 15px;
+  background-color: #0040ff91;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+#buttonForm:hover {
+  background-color: #0040ff;
+}
+
+.card {
+  width: 315px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 2px #0010ff40;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 7px;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 315px;
+  height: 200px;
+  background-color: white;
+  box-shadow: 0px 4px 15px 2px #0010ff40;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  top: 376px;
+}
+
+.card-city,
+.card-weather,
+.card-discription {
+  width: 100%;
+}
+
+.card-city {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card-city span {
+  padding: 3px 5px;
+  background: #e5464f;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1;
+  margin-left: 5px;
+  margin-top: -15px;
+}
+
+.card-weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-value {
+  font-size: 86px;
+  font-weight: 600;
+}
+
+.card-value sup {
+  font-size: 50%;
+}
+
+.card-img {
+  width: 150px;
+}
+
+.card-discription {
+  font-size: 18px;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #999;
+}

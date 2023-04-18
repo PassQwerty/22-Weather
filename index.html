@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="textHeader">Прогноз погоды</h1>
+      <form id="Form" action="">
+        <input
+          type="text"
+          id="inputForm"
+          placeholder="Введите название города"
+        />
+        <button id="buttonForm" type="submit">Найти</button>
+      </form>
+    </header>
+    <main id="main">
+      <div class="card">
+        <h2 class="card-city">
+          London
+          <span>GB</span>
+        </h2>
+        <div class="card-weather">
+          <div class="card-value">
+            11
+            <sup>°c</sup>
+          </div>
+          <img class="card-img" src="img/icon/cloudy.png" alt="" />
+        </div>
+        <div class="card-discription">Cloud</div>
+      </div>
+    </main>
+    <footer>
+      <p>Страница подтверждена Copyright | © 2023 PassQwerty</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
